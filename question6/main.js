@@ -6,14 +6,13 @@ const middleName = document.getElementById("middlename");
 const lastName = document.getElementById("lastname");
 const course = document.getElementById("course");
 const phone = document.getElementById("tel");
-const address = document.getElementById("address");
 const email = document.getElementById("email");
-const gender = document.querySelectorAll("#gender");
 const password = document.getElementById("password");
 const retypePass = document.getElementById("retype-pass");
 
 function checkValidate(e) {
   e.preventDefault();
+
   const errors = document.querySelectorAll(".error");
   errors.forEach((message) => {
     message.remove();
@@ -27,7 +26,6 @@ function checkValidate(e) {
   courseValidate(course, course.value) && counter++;
   phoneValidate(phone, phone.value) && counter++;
   emailValidate(email.value) && counter++;
-  genderValidate(gender) && counter++;
   passwordValidate(password, password.value) && counter++;
   retypePassValidate(retypePass, retypePass.value, password.value) && counter++;
 }
@@ -84,16 +82,6 @@ function emailValidate(inputEmail) {
   } else {
     return true;
   }
-}
-
-function genderValidate(elements) {
-  let gender1;
-  elements.forEach((element) => {
-    if (element.checked === true) {
-      gender1 = element.nextElementSibling.innerHTML;
-    }
-  });
-  return gender1;
 }
 
 function passwordValidate(element, input) {
