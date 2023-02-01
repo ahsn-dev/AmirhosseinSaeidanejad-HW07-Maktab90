@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="main-content">
+      <h1>مشاهده ویدیو معرفی محصولات</h1>
+      <video controls src="./videos/video.mp4">
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <section class="product-details">
+        <div class="product-detail">
+          <label for="laptop-model">Laptop model:</label>
+          <select name="model" id="model">
+            <option value="nothing" default disabled selected>
+              Nothing selected
+            </option>
+            <option value="">Asus</option>
+            <option value="">Lenovo</option>
+            <option value="">HP</option>
+          </select>
+        </div>
+        <div class="product-detail">
+          <label for="proccessor">Proccessor:</label>
+          <select name="Proccessor" id="Proccessor">
+            <option value="nothing" default disabled selected>
+              Nothing selected
+            </option>
+            <option value="">Core i3</option>
+            <option value="">Core i5</option>
+            <option value="">Core i7</option>
+          </select>
+        </div>
+        <div class="product-detail funnel">
+          <ion-icon name="funnel"></ion-icon>
+          <label for="ram">RAM:</label>
+          <input type="button" value="RAM" id="ram" />
+        </div>
+        <div class="product-detail funnel">
+          <ion-icon name="funnel"></ion-icon>
+          <label for="hard-disk">Hard Disk:</label>
+          <input type="button" value="Hard disk" />
+        </div>
+        <div class="product-detail">
+          <label for="display">Display:</label>
+          <select name="display" id="display">
+            <option value="nothing" default disabled selected>
+              Nothing selected
+            </option>
+            <option value="">13 inch</option>
+            <option value="">15 inch</option>
+            <option value="">17 inch</option>
+          </select>
+        </div>
+      </section>
+      <hr />
+      <table>
+        <thead>
+          <tr>
+            <th>laptop model</th>
+            <th>picture</th>
+            <th>proccessor</th>
+            <th>ram</th>
+            <th>hard disk</th>
+            <th>display</th>
+            <th>graphics</th>
+            <th>os</th>
+            <th>weight</th>
+            <th>battery</th>
+            <th>price</th>
+            <th>purchase</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>acer chromebook cb3-131-c3sz</td>
+            <td><img src="./images/laptop.jpg" alt="laptop image" /></td>
+            <td>intel celeron n-2849</td>
+            <td>2gb ddr3</td>
+            <td>16gb ssd</td>
+            <td>11.6" ips screen</td>
+            <td>intel hd graphics</td>
+            <td>google chrome operating system</td>
+            <td>2.4 pounds</td>
+            <td>9h</td>
+            <td>$228</td>
+            <td><button>Buy now</button></td>
+          </tr>
+          <tr>
+            <td>acer chromebook cb3-131-c3sz</td>
+            <td><img src="./images/laptop.jpg" alt="laptop image" /></td>
+            <td>intel celeron n-2849</td>
+            <td>2gb ddr3</td>
+            <td>16gb ssd</td>
+            <td>11.6" ips screen</td>
+            <td>intel hd graphics</td>
+            <td>google chrome operating system</td>
+            <td>2.4 pounds</td>
+            <td>9h</td>
+            <td>$228</td>
+            <td><button>Buy now</button></td>
+          </tr>
+          <tr>
+            <td>acer chromebook cb3-131-c3sz</td>
+            <td><img src="./images/laptop.jpg" alt="laptop image" /></td>
+            <td>intel celeron n-2849</td>
+            <td>2gb ddr3</td>
+            <td>16gb ssd</td>
+            <td>11.6" ips screen</td>
+            <td>intel hd graphics</td>
+            <td>google chrome operating system</td>
+            <td>2.4 pounds</td>
+            <td>9h</td>
+            <td>$228</td>
+            <td><button>Buy now</button></td>
+          </tr>
+          <tr>
+            <td>acer chromebook cb3-131-c3sz</td>
+            <td><img src="./images/laptop.jpg" alt="laptop image" /></td>
+            <td>intel celeron n-2849</td>
+            <td>2gb ddr3</td>
+            <td>16gb ssd</td>
+            <td>11.6" ips screen</td>
+            <td>intel hd graphics</td>
+            <td>google chrome operating system</td>
+            <td>2.4 pounds</td>
+            <td>9h</td>
+            <td>$228</td>
+            <td><button>Buy now</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
