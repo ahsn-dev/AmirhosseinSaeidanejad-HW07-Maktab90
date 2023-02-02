@@ -6,6 +6,7 @@ const middleName = document.getElementById("middlename");
 const lastName = document.getElementById("lastname");
 const course = document.getElementById("course");
 const phone = document.getElementById("tel");
+const gender = document.querySelectorAll("#gender");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const retypePass = document.getElementById("retype-pass");
@@ -25,9 +26,21 @@ function checkValidate(e) {
   nameValidate(lastName, lastName.value) && counter++;
   courseValidate(course, course.value) && counter++;
   phoneValidate(phone, phone.value) && counter++;
+  genderValidate(gender, gender.value) && validationCounter++;
   emailValidate(email.value) && counter++;
   passwordValidate(password, password.value) && counter++;
   retypePassValidate(retypePass, retypePass.value, password.value) && counter++;
+
+  counter === 9 &&
+    console.log(
+      `firstName:${firstName.value}\nmiddleName:${middleName.value}\nlastName:${
+        lastName.value
+      }\ncourse:${course.value}\nphoneNumber:${
+        phone.value
+      }\ngender:${genderValidate(gender)}\nemail:${email.value}\npassword:${
+        password.value
+      }\naddress:${address.value}`
+    );
 }
 
 form.addEventListener("submit", checkValidate);
@@ -70,6 +83,16 @@ function phoneValidate(element, input) {
   } else {
     return true;
   }
+}
+
+function genderValidate(elements) {
+  let genderType;
+  elements.forEach((element) => {
+    if (element.checked === true) {
+      genderType = element.nextElementSibling.innerHTML;
+    }
+  });
+  return genderType;
 }
 
 function emailValidate(inputEmail) {
