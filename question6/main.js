@@ -26,7 +26,7 @@ function checkValidate(e) {
   nameValidate(lastName, lastName.value) && counter++;
   courseValidate(course, course.value) && counter++;
   phoneValidate(phone, phone.value) && counter++;
-  genderValidate(gender, gender.value) && validationCounter++;
+  genderValidate(gender, gender.value) && counter++;
   emailValidate(email.value) && counter++;
   passwordValidate(password, password.value) && counter++;
   retypePassValidate(retypePass, retypePass.value, password.value) && counter++;
